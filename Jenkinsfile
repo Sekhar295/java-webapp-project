@@ -15,7 +15,7 @@ pipeline {
         }
         stage('deployment'){
             steps{
-                sh 'sudo -S cp /var/lib/jenkins/workspace/scm_pipeline/target/*.war /home/ubuntu/apache-tomcat-9.0.107/webapps'
+                sh 'sudo cp /var/lib/jenkins/workspace/scm_pipeline/target/*.war /home/ubuntu/apache-tomcat-9.0.107/webapps'
             }
         }
     }
